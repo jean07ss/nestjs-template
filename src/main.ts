@@ -3,6 +3,7 @@ import { AppModule } from './app.module';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { ValidationPipe } from '@nestjs/common';
 import { ErrorsInterceptor } from './core/interceptors/errors.interceptor';
+import { PrismaErrorsInterceptor } from './core/interceptors/prisma-errors.interceptor';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
@@ -15,7 +16,10 @@ async function bootstrap() {
     }),
   );
 
-  app.useGlobalInterceptors(new ErrorsInterceptor());
+  app.useGlobalInterceptors(
+    new ErrorsInterceptor(),
+    new PrismaErrorsInterceptor()
+  );
 
   const config = new DocumentBuilder()
     .setTitle('Swagger Template Example')
@@ -28,7 +32,7 @@ async function bootstrap() {
 
   const document = SwaggerModule.createDocument(app, config);
 
-  SwaggerModule.setup('doc', app, document);
+  SwaggerModule.setup('docs', app, document);
 
   await app.listen(3000);
 }
