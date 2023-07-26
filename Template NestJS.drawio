@@ -1,23 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2023-07-26T13:56:36.196Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="7nlIdyQomQK5gQOUUOD-" version="21.3.6" type="github">
-  <diagram id="984q4uurinNOGXVSppAD" name="Arquitetura Android18API">
-    <mxGraphModel dx="3690" dy="-276" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2023-07-26T13:58:46.407Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="urOgMqSfwj5QbhEaeEMd" version="21.3.6" type="github">
+  <diagram id="984q4uurinNOGXVSppAD" name="Organização de pastas">
+    <mxGraphModel dx="3377" dy="-414" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="eVxNwqdZ_CVqc7oLJf9I-89" value="Entities" style="swimlane;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
-          <mxGeometry x="-1590" y="1230" width="1280" height="260" as="geometry" />
-        </mxCell>
-        <mxCell id="eVxNwqdZ_CVqc7oLJf9I-69" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Menu&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ id: UUID&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ defaultMessage: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ isPrincipal: boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ isFinal: boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ options: Option[ ]&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getMenuMessage(): string&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="eVxNwqdZ_CVqc7oLJf9I-89" vertex="1">
-          <mxGeometry x="20" y="50" width="190" height="170" as="geometry" />
-        </mxCell>
-        <mxCell id="eVxNwqdZ_CVqc7oLJf9I-70" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Option&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ id: UUID&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ nextMenu: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ message: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ order: number&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getFullMessage(): string&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="eVxNwqdZ_CVqc7oLJf9I-89" vertex="1">
-          <mxGeometry x="230" y="50" width="190" height="170" as="geometry" />
-        </mxCell>
-        <mxCell id="eVxNwqdZ_CVqc7oLJf9I-72" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Chat&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ id: UUID&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ lastMessage: Date&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ isActive: boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ actualStepMenu: Menu&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ customer: User&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getChatIsAlive(): boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getChatToJSON: json&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="eVxNwqdZ_CVqc7oLJf9I-89" vertex="1">
-          <mxGeometry x="440" y="50" width="190" height="170" as="geometry" />
-        </mxCell>
         <mxCell id="eVxNwqdZ_CVqc7oLJf9I-98" value="&amp;nbsp;" style="swimlane;whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
-          <mxGeometry x="-1590" y="1610" width="2370" height="1610" as="geometry" />
+          <mxGeometry x="-1599" y="1237" width="2370" height="1610" as="geometry" />
         </mxCell>
         <mxCell id="eVxNwqdZ_CVqc7oLJf9I-1" value="Presentation Layer" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=23;" parent="eVxNwqdZ_CVqc7oLJf9I-98" vertex="1">
           <mxGeometry x="60" y="80" width="880" height="510" as="geometry" />
@@ -35,7 +23,7 @@
           <mxGeometry x="305" y="20" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="eVxNwqdZ_CVqc7oLJf9I-6" value="Application" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" parent="eVxNwqdZ_CVqc7oLJf9I-1" vertex="1">
-          <mxGeometry x="70" y="280" width="730" height="160" as="geometry" />
+          <mxGeometry x="70" y="293" width="730" height="160" as="geometry" />
         </mxCell>
         <mxCell id="eVxNwqdZ_CVqc7oLJf9I-7" value="Application Services" style="whiteSpace=wrap;html=1;" parent="eVxNwqdZ_CVqc7oLJf9I-6" vertex="1">
           <mxGeometry x="305" y="50" width="120" height="60" as="geometry" />
