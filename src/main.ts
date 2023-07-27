@@ -18,7 +18,7 @@ async function bootstrap() {
 
   app.useGlobalInterceptors(
     new ErrorsInterceptor(),
-    new PrismaErrorsInterceptor()
+    new PrismaErrorsInterceptor(),
   );
 
   const config = new DocumentBuilder()
